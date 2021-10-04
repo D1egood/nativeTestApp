@@ -4,7 +4,7 @@
     "slug": "testNative",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/ahri.png",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/spl.png",
       "resizeMode": "contain",

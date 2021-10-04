@@ -8,11 +8,13 @@ import {
     Alert
 } from 'react-native';
 import Share from './share';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
 
 let user = { username: '', password: '' };
 
 const user1 = { username: 'Diego', password: 'diego' };
-const Login = () => {
+const Login = ({navigation}) => {
 
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState(null);
@@ -28,7 +30,7 @@ const Login = () => {
                 setConfirm(true);
                 return true;
             } else {
-                alert('password mismatch');
+                alert('Wrong Password');
                 return false;
             }
         }
@@ -54,7 +56,7 @@ const Login = () => {
             }}>
             <Text>Log In</Text></TouchableOpacity> }
             </TouchableOpacity>
-            {confirm ===true &&(<Share/>)}
+            {confirm === true && navigation.navigate('Share')}
         </View>
     );
 };
