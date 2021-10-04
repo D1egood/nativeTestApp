@@ -63,7 +63,6 @@ import * as sharing from 'expo-sharing';
           margin:20,
           width: 200,
           height: 200,
-          //resizeMode: 'contain',
           borderWidth:3,
           borderColor: 'black',
           borderRadius: 100,
