@@ -14,11 +14,10 @@ let user = { username: '', password: '' };
 const user1 = { username: 'Diego', password: 'diego' };
 const Login = () => {
 
-
-    //const [user, setUser] = useState({username:'', password:''});
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState(null);
     const [confirm,setConfirm] = useState(false);
+    
     const verifyUser = async() => {
         if (username != user1.username) {
             Alert.alert('Error', "The user " + username + " doesn't exist");
